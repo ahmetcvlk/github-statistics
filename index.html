@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Statistics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/js/lucide.min.js"></script>
+    <script src="assets/js/chart.umd.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="header-top">
+                <span class="title" data-i18n="appTitle">Github Statistics</span>
+
+                <div class="header-actions">
+                    <button id="theme-toggle" class="header-btn" aria-label="Toggle theme">
+                        <i data-lucide="moon"></i>
+                    </button>
+
+                    <button id="language-toggle" class="header-btn">
+                        TR
+                    </button>
+                </div>
+            </div>
+
+            <div class="action-container">
+                <div class="inputs">
+                    <input type="text" id="username" placeholder="Github Username"
+                        data-i18n-placeholder="usernamePlaceholder">
+
+                    <input type="password" id="apikey" placeholder="Github API Key"
+                        data-i18n-placeholder="apiKeyPlaceholder">
+                </div>
+
+                <button class="fetch-btn" id="fetch-btn" data-i18n="fetch">
+                    Fetch
+                </button>
+            </div>
+        </header>
+
+        <div id="repoList" class="content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
