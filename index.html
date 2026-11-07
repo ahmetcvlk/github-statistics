@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="assets/js/lucide.min.js"></script>
     <script src="assets/js/chart.umd.min.js"></script>
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="4b0b2cf3-e662-40d7-8223-8ec8429e2566"></script>
+    <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="4b0b2cf3-e662-40d7-8223-8ec8429e2566"></script>
 </head>
 
 <body>
@@ -29,19 +30,19 @@
                 </div>
             </div>
 
-            <div class="action-container">
+            <form class="action-container" id="github-form">
                 <div class="inputs">
                     <input type="text" id="username" placeholder="Github Username"
-                        data-i18n-placeholder="usernamePlaceholder">
+                        data-i18n-placeholder="usernamePlaceholder" autocomplete="username">
 
                     <input type="password" id="apikey" placeholder="Github API Key"
-                        data-i18n-placeholder="apiKeyPlaceholder">
+                        data-i18n-placeholder="apiKeyPlaceholder" autocomplete="off">
                 </div>
 
-                <button class="fetch-btn" id="fetch-btn" data-i18n="fetch">
+                <button type="submit" class="fetch-btn" id="fetch-btn" data-i18n="fetch">
                     Fetch
                 </button>
-            </div>
+            </form>
         </header>
 
         <div id="repoList" class="content"></div>

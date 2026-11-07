@@ -791,7 +791,9 @@ function renderDashboard(repos, trafficData) {
 // FETCH GITHUB STATISTICS
 // ==========================================
 
-fetchButton.addEventListener("click", async () => {
+document.getElementById("github-form").addEventListener("submit", async (event) => {
+    
+    event.preventDefault();
 
     const username = usernameInput.value.trim();
     const token = apiKeyInput.value.trim();
